@@ -51,7 +51,7 @@ class DashboardController extends Controller
     }
 
     public function getMatch(Request $request){
-        $user = User::findorFail($request['id']);
+        $user = User::find($request['id']);
         $order_type = $request['order'];
         return view('partial.match_details',compact(['user','order_type']));
     }

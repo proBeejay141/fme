@@ -7,21 +7,21 @@ use App\User;
 use Carbon\Carbon;
 use Illuminate\Console\Command;
 
-class clearUser extends Command
+class clearNonActive extends Command
 {
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'clear:trashUser';
+    protected $signature = 'clear:nonActive';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command to clear not active users';
+    protected $description = 'Command to clear users that does create ph order';
 
     /**
      * Create a new command instance.
@@ -41,20 +41,20 @@ class clearUser extends Command
     public function handle()
     {
         //
-        $users = User::onlyTrashed()->get();
+        $users = User::all();
         foreach ($users as $user){
-            if ($this->check($user)){
-               $balance = Balance::where('user_id','=',$user->id)->first();
-                $balance->delete();
+            if (count($user->orders)==0 && $this->check($user)== true){
+                $bal = Balance::where('user_id',$user->id)->first();
+                $bal->delete();
                 $user->forceDelete();
-                $this->info($user->email.' deleted');
+                $this->info('user clear');
             }
         }
     }
 
     private function check($user){
-        $startTime = Carbon::parse($user->deleted_at);
-        if (Carbon::now()->diffInDays($startTime)>=30){
+        $startTime = Carbon::parse($user->created_at);
+        if (Carbon::now()->diffInDays($startTime)>=1){
             return true;
         }
         return false;

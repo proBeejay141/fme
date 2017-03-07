@@ -117,13 +117,16 @@ class MatchController extends Controller
             if ($cnt == 1){
                 $per = $this->percent($ph_order->amount);
                 $referral = User::where('email','=',$ph_user->referral)->first();
-                $refBal = Balance::where('user_id',$referral->id)->first();
-                $refBal->bonus+=$per;
-                $refBal->save();
-                $referral->bonuses()->updateOrCreate([
-                    'amount'=> $per,
-                    'for'=>'Referral Bonus'
-                ]);
+                if($referral){
+                    $refBal = Balance::where('user_id',$referral->id)->first();
+                    $refBal->bonus+=$per;
+                    $refBal->save();
+                    $referral->bonuses()->updateOrCreate([
+                        'amount'=> $per,
+                        'for'=>'Referral Bonus'
+                    ]);
+                }
+
 
             }
 

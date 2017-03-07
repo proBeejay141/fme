@@ -24,7 +24,7 @@
     {{--<link href="/css/app.css" rel="stylesheet">--}}
     <link href="{{url('css/app.min.1.css')}}" rel="stylesheet">
     <link href="{{url('css/app.min.2.css')}}" rel="stylesheet">
-    <link href="{{url('css/main.css')}}" rel="stylesheet">
+    <link href="{{url('css/main.min.css')}}" rel="stylesheet">
 
     <!-- Scripts -->
     <script>
@@ -112,9 +112,9 @@
 
 @yield('script')
 
-<script src="{{url('js/functions.js')}}"></script>
-<script src="{{url('js/actions.js')}}"></script>
-<script src="{{url('js/main.js')}}"></script>
+<script src="{{url('js/functions.min.js')}}"></script>
+<script src="{{url('js/actions.min.js')}}"></script>
+<script src="{{url('js/main.min.js')}}"></script>
 
 </body>
 </html>

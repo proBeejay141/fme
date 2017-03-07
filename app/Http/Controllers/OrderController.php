@@ -17,24 +17,24 @@ class OrderController extends Controller
         $order = new Order();
         switch ($request['package']){
             case 'classic' : {
+                $order->amount = 5000;
+                $order->balance = 5000;
+                break;
+            }
+            case 'premium' : {
                 $order->amount = 10000;
                 $order->balance = 10000;
                 break;
             }
-            case 'premium' : {
+
+            case 'ultimate' : {
                 $order->amount = 20000;
                 $order->balance = 20000;
                 break;
             }
-
-            case 'ultimate' : {
+            case 'booster' : {
                 $order->amount = 50000;
                 $order->balance = 50000;
-                break;
-            }
-            case 'booster' : {
-                $order->amount = 100000;
-                $order->balance = 100000;
                 break;
             }
             default:{

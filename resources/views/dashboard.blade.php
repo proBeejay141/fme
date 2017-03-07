@@ -542,7 +542,7 @@
                             <div class="lb-body">
                                 <div class="container">
                                     <div class="col-md-12">
-                                        <h4 style="color:#fff;"><span>Note:</span> Do not confirm the donation untill you actually receive a notification from your bank.</h4>
+                                        <h4 style="color:#fff;"><span>Note:</span> Do not confirm the donation untill you actually receive a notification from your bank, and note that you havev to Provide Help within 8 hour after completing a Get help order to  prevent you acount from been blocked. </h4>
                                     </div>
                                     <div class="col-md-12" style="margin-top:20px;">
                                         <div class="checkbox m-b-15">
@@ -600,10 +600,10 @@
                                             <dd>
                                                 <div class="fg-line">
                                                     <select name="package" class="form-control" value="{{ old('package') }}" required>
-                                                        <option value="classic">Classic:  ₦10,000 Return> ₦20,000</option>
-                                                        <option value="premium">Premium:  ₦20,000 Return> ₦40,000</option>
-                                                        <option value="ultimate">Ultimate:  ₦50,000 Return> ₦100,000</option>
-                                                        <option value="booster">Booster:  ₦100,000 Return> ₦200,000</option>
+                                                        <option value="classic">Classic:  ₦5,000 Return> ₦10,000</option>
+                                                        <option value="premium">Premium:  ₦10,000 Return> ₦20,000</option>
+                                                        <option value="ultimate">Ultimate:  ₦20,000 Return> ₦40,000</option>
+                                                        <option value="booster">Booster:  ₦50,000 Return> ₦100,000</option>
                                                     </select>
                                                 </div>
                                             </dd>
@@ -660,16 +660,21 @@
                                                 <dd>
                                                     <div class="fg-line" id="ghParen" style="width: 90%;">
                                                         <select data-balance="{{auth()->user()->balance->ready_gh}}" name="gh_amount" type="text" class="form-control">
+                                                            <option value="5000">₦5,000</option>
                                                             <option value="10000">₦10,000</option>
                                                             <option value="20000">₦20,000</option>
                                                             <option value="40000">₦40,000</option>
                                                             <option value="50000">₦50,000</option>
                                                             <option value="100000">₦100,000</option>
-                                                            <option value="200000">₦200,000</option>
                                                         </select>
                                                     </div>
 
                                                 </dd>
+                                            </dl>
+
+                                            <dl class="dl-horizontal">
+                                                <dt style="width:190px;">Note:</dt>
+                                                <dd>You must create another PH order within 8 hours after completing a GH order to prevent your account from being blocked.</dd>
                                             </dl>
                                         </form>
 

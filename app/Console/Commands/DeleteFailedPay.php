@@ -15,7 +15,7 @@ class DeleteFailedPay extends Command
      *
      * @var string
      */
-    protected $signature = 'delete:failPay';
+    protected $signature = 'clear:failPay';
 
     /**
      * The console command description.

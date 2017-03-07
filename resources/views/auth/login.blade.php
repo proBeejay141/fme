@@ -81,7 +81,7 @@
 {{---------------------------------------------------}}
 @section('footer')
     <footer id="footer">
-        Copyright I'Conquer &copy; 2016
+        Copyright Money Streaks &copy; 2016
     </footer>
 @endsection
 

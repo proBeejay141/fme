@@ -1,3 +1,4 @@
+@if($user != null)
 @if($order_type == 'ph')
     <div id="_target" class="pmbb-view">
         <dl class="dl-horizontal">
@@ -35,6 +36,14 @@
         <dl class="dl-horizontal">
             <dt>Note</dt>
             <dd>You can called the peered member to informed him/her about the match, and if he didn't pays before the time runs out, you will be rematched.</dd>
+        </dl>
+    </div>
+@endif
+@else
+    <div id="_target" class="pmbb-view">
+        <dl class="dl-horizontal">
+            <dt>Note</dt>
+            <dd>This user have been blocked or removed</dd>
         </dl>
     </div>
 @endif

@@ -48,23 +48,23 @@
                         <div class="col-md-6">
                             <dl>
                                 <dt>Account Name</dt>
-                                <dd>{{$match->getUser($match->ghUser_id)->bank->acct_name}}</dd>
+                                <dd>{{$match->getUser($match->ghUser_id)->bank->acct_name or 'deleted'}}</dd>
                             </dl>
                             <dl>
                                 <dt>Account Number</dt>
-                                <dd>{{$match->getUser($match->ghUser_id)->bank->acct_number}}</dd>
+                                <dd>{{$match->getUser($match->ghUser_id)->bank->acct_number or 'deleted'}}</dd>
                             </dl>
                             <dl>
                                 <dt>Account Name</dt>
-                                <dd>{{$match->getUser($match->ghUser_id)->bank->bank_name}}</dd>
+                                <dd>{{$match->getUser($match->ghUser_id)->bank->bank_name or 'deleted'}}</dd>
                             </dl>
                             <dl>
                                 <dt>Email</dt>
-                                <dd>{{$match->getUser($match->ghUser_id)->email}}</dd>
+                                <dd>{{$match->getUser($match->ghUser_id)->email or 'deleted'}}</dd>
                             </dl>
                             <dl>
                                 <dt>Phone</dt>
-                                <dd>{{$match->getUser($match->ghUser_id)->phone}}</dd>
+                                <dd>{{$match->getUser($match->ghUser_id)->phone or 'deleted'}}</dd>
                             </dl>
                         </div>
                     </div>

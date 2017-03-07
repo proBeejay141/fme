@@ -2,7 +2,7 @@
 @extends('layouts.auth-layout')
 
 @section('title')
-    Messages | Tickests
+    Messages | Tickets
 @endsection
 
 @section('style')

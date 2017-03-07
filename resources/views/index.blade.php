@@ -122,7 +122,7 @@
                         </div>
                         <div class="ser-right">
                             <h4>CLASSIC</h4>
-                            <p>Pay <span>N10,000</span> and get <span>N20,000</span> in return.</p>
+                            <p>Pay <span>5,000</span> and get <span>N10,000</span> in return.</p>
                             <a><i class="zmdi zmdi-account-add zmdi-hc-fw"></i> Sign up</a>
                         </div>
                         <div class="clearfix"></div>
@@ -135,7 +135,7 @@
                         </div>
                         <div class="ser-right">
                             <h4>PREMIUM</h4>
-                            <p>Pay <span>N20,000</span> and get <span>N40,000</span> in return.</p>
+                            <p>Pay <span>N10,000</span> and get <span>N20,000</span> in return.</p>
                             <a><i class="zmdi zmdi-account-add zmdi-hc-fw"></i> Sign up</a>
                         </div>
                         <div class="clearfix"></div>
@@ -148,7 +148,7 @@
                         </div>
                         <div class="ser-right">
                             <h4>ULTIMATE</h4>
-                            <p>Pay <span>N50,000</span> and get <span>N100,000</span> in return.</p>
+                            <p>Pay <span>N20,000</span> and get <span>N40,000</span> in return.</p>
                             <a><i class="zmdi zmdi-account-add zmdi-hc-fw"></i> Sign up</a>
                         </div>
                         <div class="clearfix"></div>
@@ -162,7 +162,7 @@
                         </div>
                         <div class="ser-right">
                             <h4>BOOSTER</h4>
-                            <p>Pay <span>N100,000</span> and get <span>N200,000</span> in return.</p>
+                            <p>Pay <span>N50,000</span> and get <span>N100,000</span> in return.</p>
                             <a><i class="zmdi zmdi-account-add zmdi-hc-fw"></i> Sign up</a>
                         </div>
                         <div class="clearfix"></div>
@@ -299,7 +299,7 @@
                     <h4>Phone</h4>
                     <address>
                         <abbr title="Phone">P :</abbr> +1 (479) 310-6874 <br>
-                        <abbr title="Whatsapp">Whatsapp :</abbr> +1 (479) 310-6874
+                        <abbr title="Phone">P :</abbr> +243 8142693137
                     </address>
                 </div>
                 <div class="col-md-6 footer-middle" style="color:#fff">
@@ -328,7 +328,7 @@
                 <div class="clearfix"></div>
             </div>
             <div class="footer-text">
-                <p>© 2017 I'Conquer.com. All Rights Reserved | Template by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+                <p>© 2017 Money Streaks. All Rights Reserved | Template by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
             </div>
         </div>
     </div>

@@ -109,7 +109,7 @@
             @else
                 <div class="card">
                     <div class="container" style="text-align: center">
-                        <h3 style="color: #81a0ab">You doesn't have any Completed Get Help order yet.</h3>
+                        <h3 style="color: #81a0ab">You don't' have any Completed Get Help order yet.</h3>
                     </div>
                 </div>
             @endif

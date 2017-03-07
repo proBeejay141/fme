@@ -256,7 +256,7 @@
 {{---------------------------------------------------}}
 @section('footer')
     <footer id="footer">
-        Copyright I'Conquer &copy; 2016
+        Copyright Money Streaks &copy; 2016
         {{--<ul class="f-menu">--}}
         {{--<li><a href="/">Home</a></li>--}}
         {{--<li><a href="{{route('events')}}">Dashboard</a></li>--}}

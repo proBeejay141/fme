@@ -1,6 +1,6 @@
 <header id="header" class="media">
     <div class="pull-left h-logo">
-        {{--<a class=".z-depth-1-bottom" href="{{route('index')}}" ><i>I</i>'Conquer</a>--}}
+        <a class=".z-depth-1-bottom" href="{{route('index')}}" ><i>MS</i></a>
 
         {{--<div class="menu-collapse" data-ma-action="sidebar-open" data-ma-target="main-menu">--}}
             {{--<div class="mc-wrap">--}}

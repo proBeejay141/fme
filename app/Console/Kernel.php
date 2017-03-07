@@ -19,6 +19,8 @@ class Kernel extends ConsoleKernel
         Commands\matchUser::class,
         Commands\MoveMafro::class,
         Commands\clearUser::class,
+        Commands\clearNonActive::class,
+        Commands\clearRunner::class,
     ];
 
     /**
@@ -32,7 +34,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('inspire')
         //          ->hourly();
         //
-         $schedule->command('delete:failPay')
+         $schedule->command('clear:failPay')
                   ->everyFiveMinutes();
 
         $schedule->command('match:user')
@@ -49,8 +51,14 @@ class Kernel extends ConsoleKernel
         $schedule->command('move:mafro')
                   ->everyFiveMinutes();
 
-        $schedule->command('clear:user')
+        $schedule->command('clear:trashUser')
                   ->monthly();
+
+        $schedule->command('clear:nonActive')
+                  ->daily();
+
+        $schedule->command('clear:runner')
+                  ->everyThirtyMinutes();
     }
 
     /**
