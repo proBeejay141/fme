@@ -48,12 +48,6 @@
                         <div><h3>No Complain</h3></div>
                     @endif
 
-                    {{--<a class="list-group-item media user" data-id="1" href="#">--}}
-                        {{--<div class="media-body">--}}
-                            {{--<div class="lgi-heading">Davil Parnell</div>--}}
-                            {{--<small class="lgi-text">bjbeejay141@gmail.com</small>--}}
-                        {{--</div>--}}
-                    {{--</a>--}}
 
                 </div>
 
